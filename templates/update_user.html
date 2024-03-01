@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update User</title>
+</head>
+<body style="background-color: #A8C7BB; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+    <nav class="navbar" style="background-color:#574686; color:#A8C7BB; padding: 10px;">
+        <h1>Update User</h1>
+    </nav>
+    <div class="container-sm" style="margin-top: 10px; padding: 25px; background-color:#EEC8E0; border-radius: 25px;">
+    <form method="post">
+        <label style="color:#574686; font-weight:700;" for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ user.Name }}" required>
+        <label style="color:#574686; font-weight:700;" for="points">Points:</label>
+        <input type="number" id="points" name="points" value="{{ user.Points }}" required>
+        <input type="hidden" name="id" value="{{ user.Id }}">
+        <button type="submit" style="background-color:#A8C7BB; color:#574686; font-weight: 900; padding: 10px; border-radius: 15px;">Update User</button>
+    </form>
+    <a style="color: #574686; font-weight: 900; margin-top: 20px;" href="/">Back to User List</a>
+</body>
+</html>
+
